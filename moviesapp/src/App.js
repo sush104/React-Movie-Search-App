@@ -19,6 +19,8 @@ const App = () => {
 			setMovies(resJSON.Search);
 		}
 
+    // console.log(movies)
+
   }
 
   useEffect(() => {
@@ -29,7 +31,7 @@ const App = () => {
 	return (
     <>
       <Search searchValue={search} setSearchValue={setSearch} />
-      <Heading heading='Searched Movies' />
+      {movies.length == [] ? <Heading heading='Enter your movie in search bar' />:<Heading heading='Your Searched Movies'/>}
       <div className='grid-container'>
 				<MovieList 
         movies={movies} />
