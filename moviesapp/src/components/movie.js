@@ -9,7 +9,7 @@ const MovieList = (movie) => {
 					<img src={movie.Poster} alt='movie'></img>
                     <p>Title: {movie.Title}</p>
                     <p>Year: {movie.Year}</p>
-                </div>
+					</div>
 			))}
         </>
     )

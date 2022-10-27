@@ -11,20 +11,6 @@
   grid-auto-rows: 1fr
 }
 
-/* Mobile */
-@media only screen and (max-width: 600px) {
-  .grid-container { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-
-  .grid-item p {
-    font-size: small;
-  }
-}
-
-/* Tablet */
-@media only screen and (max-width: 768px) {
-  .grid-container { grid-template-columns: repeat(2, 1fr); }
-}
-
 .grid-item img {
   width: 80%;
   height: 80%;
